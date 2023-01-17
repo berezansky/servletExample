@@ -1,4 +1,4 @@
-package com.berezanskiy.XO.utils;
+package com.berezanskiy.servletExample.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;

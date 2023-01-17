@@ -1,4 +1,4 @@
-package com.berezanskiy.XO.models;
+package com.berezanskiy.servletExample.models;
 
 import io.ebean.Model;
 import javax.persistence.Id;

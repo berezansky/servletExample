@@ -1,4 +1,4 @@
-package com.berezanskiy.XO.db;
+package com.berezanskiy.servletExample.db;
 
 import java.sql.*;
 

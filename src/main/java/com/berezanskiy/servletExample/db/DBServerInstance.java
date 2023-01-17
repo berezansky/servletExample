@@ -1,12 +1,17 @@
-package com.berezanskiy.XO.db;
+package com.berezanskiy.servletExample.db;
 
+import com.berezanskiy.servletExample.utils.LoggerFactory;
 import io.ebean.Database;
 import io.ebean.DatabaseFactory;
 import io.ebean.config.DatabaseConfig;
 import io.ebean.datasource.DataSourceConfig;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class DBServerInstance {
     private static Database ebeanServer = null;
+    private static Logger LOGGER = LoggerFactory.getLogger(DBServerInstance.class);
 
     public DBServerInstance() {
 
@@ -32,7 +37,7 @@ public class DBServerInstance {
         cfg.setDataSourceConfig(dataSourceConfig);
         Database db = DatabaseFactory.create(cfg);
 
-        System.out.println(db);
+        LOGGER.log(Level.INFO, "Database has successful create");
 
         return db;
     }

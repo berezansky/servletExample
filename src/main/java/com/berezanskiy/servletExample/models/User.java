@@ -1,4 +1,4 @@
-package com.berezanskiy.XO.models;
+package com.berezanskiy.servletExample.models;
 
 import javax.persistence.*;
 
@@ -11,9 +11,8 @@ public class User extends BaseModel {
     public User() {
     }
 
-    public User(Long id, String login, String password) {
+    public User(String login, String password) {
         super();
-        this.id = id;
         this.login = login;
         this.password = password;
     }
